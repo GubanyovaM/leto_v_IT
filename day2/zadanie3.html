@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+		function showMeLength() {
+			const myLength = document.getElementById('textinput').value;
+		
+			if (myLength.length > 10) {
+				alert('Pocet je vacsi ako 10: ' + myLength.length);
+			}else if (myLength.length < 10) {
+				alert('Pocet je mensi ako 10: ' + myLength.length);
+			}else {
+				alert('Pocet je rovny 10: ' + myLength.length);
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<form>
+		<input type="text" id="textinput"/>
+	</form>
+		<button
+			onclick="showMeLength();">
+			Show me the length
+		</button>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blank</title>
+	<script type="text/javascript">
+		function showMeValue() {
+			const myValue = document.getElementById('textinput').value;
+			alert(myValue);
+		}
+		function editValue() {
+			document.getElementById('textinput2').value = 'Blablabla';
+			
+		}
+		function showDate() {
+			const myDate = new Date();
+			document.getElementById('textinput3').value = myDate
+			
+		}
+	</script>
+</head>
+<body>
+	
+	<form>
+		<input type="text" id="textinput"/>
+	</form>
+		<button
+			onclick="showMeValue();">
+			Show me the value
+		</button>
+	
+
+	<form>
+		<input type="text" id="textinput2"/>
+	</form>
+		<button
+			onclick="editValue();">
+			Edit me the value
+		</button>
+
+	<form>
+		<input type="text" id="textinput3"/>
+	</form>
+		<button
+			onclick="showDate();">
+			Show me the Date
+		</button>
+
+</body>
+</html>

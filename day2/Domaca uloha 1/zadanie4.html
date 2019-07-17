@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylecalc.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="calc.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="form-group">
+			<form class="form-inline">
+ 				<input class="form-control" type="text" id="textinput1" placeholder="number 1"/>
+ 				<label class="lab1" for="+">+</label> 
+				<input class="form-control" type="text" id="textinput2" placeholder="number 2"/> 
+				<button	class="btn btn-success" type="button" onclick="Spocitaj();"> = </button>
+				<output type="text" id="textoutput1"></output> 
+			</form>
+		</div>
+
+		<div class="form-group">
+			<form class="form-inline">
+				<input class="form-control" type="text" id="textinput3" placeholder="number 1"/>
+				<label class="lab" for="+"> - </label> 
+				<input class="form-control" type="text" id="textinput4" placeholder="number 2"/>
+				<button	class="btn btn-success" type="button" onclick="Odcitaj();"> = </button>
+				<output type="text" id="textoutput2" placeholder="vysledok"></output> 
+			</form>
+		</div>
+
+		<div class="form-group">
+			<form class="form-inline">
+				<input class="form-control" type="text" id="textinput5" placeholder="number 1"/>
+				<label class="lab" for="+"> * </label> 
+				<input class="form-control" type="text" id="textinput6" placeholder="number 2"/>
+				<button	class="btn btn-success" type="button" onclick="Vynasob();"> = </button>
+				<output type="text" id="textoutput3" placeholder="vysledok"></output> 
+			</form>
+		</div>
+
+		<div class="form-group">
+			<form class="form-inline">
+				<input class="form-control" type="text" id="textinput7" placeholder="number 1"/>
+				<label class="lab" for="+"> / </label> 
+				<input class="form-control" type="text" id="textinput8" placeholder="number 2"/>
+				<button	class="btn btn-success" type="button" onclick="Vydel();"> = </button>
+				<output type="text" id="textoutput4" placeholder="vysledok"></output> 
+			</form>
+		</div>
+
+		<div class="form-group">
+			<form>
+			<div class="radio">
+				<label for="hore">Zaokruhlit hore</label>
+			 	<input type="radio" name="horedole" id="hore" value="up" disabled="disabled"/><br>
+			 	<label for="dole">Zaokruhlit dole</label>
+			 	<input type="radio" name="horedole" id="dole" value="down" disabled="disabled"/><br>
+			 </div>
+			 <div class="checkbox">
+			 	<label for="round">
+			 		<input type="checkbox" name="round" id="round" value="round" onchange="Enable();"> Zaokruhlit
+			 	</label>
+			 </div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

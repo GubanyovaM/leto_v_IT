@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zadanie</title>
+	<script type="text/javascript">
+		const myDate = new Date();
+		function showDate() {
+			document.getElementById('dateinput').value = myDate
+		}
+
+		function minus1day() {
+			let newDate = myDate.setDate(myDate.getDate() - 1);
+			let n = new Date(newDate);
+			document.getElementById('dateinput').value = n;
+			
+		}
+
+		function minus1hour() {
+			let newDate = myDate.setHours(myDate.getHours() - 1);
+			let n = new Date(newDate);
+			document.getElementById('dateinput').value = n;
+			
+		}
+
+		function plus1day() {
+			let newDate = myDate.setDate(myDate.getDate() + 1);
+			let n = new Date(newDate);
+			document.getElementById('dateinput').value = n;
+			return n;
+		}
+
+		function plus1hour() {
+			let newDate = myDate.setHours(myDate.getHours() + 1);
+			let n = new Date(newDate);
+			document.getElementById('dateinput').value = n;
+			return n;
+		}
+
+
+	</script>
+</head>
+<body>
+	<form>
+		<input type="text" id="dateinput" value=""/>
+	</form>
+		<button	onclick="showDate();">Show me the Date</button></br>
+
+		<button onclick="minus1day()">-1 deň</button>
+		<button onclick="minus1hour()">-1 hodina</button>
+		<button onclick="plus1day()">+1 deň</button>
+		<button onclick="plus1hour()">+1 hodina</button>
+
+</body>
+</html>

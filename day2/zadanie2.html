@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blank</title>
+	<script type="text/javascript">
+		
+		const today = new Date();
+		 if (today.getDay() == 2 || today.getDay() == 4 || today.getDay() == 6) {
+		 	alert('Dnes je parny den');
+		 }else{
+		 	alert('Dnes je neparny den');
+		 }
+
+		 const tomorrow = new Date();
+		 let newday = new Day(tomorrow.setDate(today.getDate() + 1)); 
+
+		  if (newday == 2 || newday == 4 || newday == 6) {
+		 	alert('Zajtra je parny den');
+		 }else{
+		 	alert('Zajtra je neparny den');
+		 }
+		
+	</script>
+</head>
+<body>
+	
+	
+
+</body>
+</html>
