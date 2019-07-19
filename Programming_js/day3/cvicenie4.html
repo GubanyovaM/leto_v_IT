@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Error Handling</h2>
+
+<p>This example demonstrates how to use <b>catch</b> to diplay an error.</p>
+
+<p id="demo"></p>
+
+<script>
+
+try {
+
+	x = 2;
+	z = 3;
+
+	if (x > z) {
+  	adddlert("Welcome guest!");
+  }else {
+  	alerts('OK');
+  }
+
+}
+catch(exception) {
+
+	if (exception.message == 'adddlert is not defined') {
+  	document.getElementById("demo").innerHTML = exception.message;
+  	}else {
+  	console.error(exception.message);
+  }
+}
+</script>
+
+</body>
+</html>

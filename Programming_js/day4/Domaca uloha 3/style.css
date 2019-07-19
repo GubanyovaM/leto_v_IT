@@ -1,0 +1,52 @@
+.str {
+  margin: 10px;
+}
+
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: rgb(52, 235, 162);
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: white;
+  left: 0px;
+  top: 0px;
+}
+
+#up {
+  position: absolute;
+  left: 180px;
+}
+
+#down {
+  position: absolute;
+  left: 170px;
+  top: 520px;
+}
+
+#left {
+  position: absolute;
+  top: 473px;
+  left: 140px;
+}
+
+#right {
+  position: absolute;
+  left:210px;
+  top: 473px;
+}
+
+#branka {
+  width: 30px;
+  height: 60px;
+  position: relative;
+  left: 400px;
+  top: 60px;
+  background: gray;
+}
+
+
