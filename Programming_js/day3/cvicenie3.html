@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Users</title>
+
+</head>
+<body>
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		const users = [
+			{
+		 		name: 'John',
+		 		email: 'john@example.com'
+			},
+		 	{
+		 		name: 'Maria',
+		 		email: 'maria@example.com'
+			},
+			{
+				name: 'Paul',
+		 		email: 'paul@example.com'
+	 		}
+		];
+
+		let emails = new Array();
+		var i;
+		var text = "";
+
+		for (i = 0; i < users.length; i++) {
+		
+			for (email in users) {
+			}
+			text += users[i].email + "<br />";
+			emails.push();
+
+		}
+		document.getElementById("demo").innerHTML = text;
+		
+	</script>
+
+</body>
+</html>
