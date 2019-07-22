@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Users</title>
+
+</head>
+<body>
+	<p id="demo"></p>
+	
+	<script type="text/javascript">
+		const users = [
+			{
+		 		name: 'John',
+		 		email: 'john@example.com'
+			},
+		 	{
+		 		name: 'Maria',
+		 		email: 'maria@example.com'
+			},
+			{
+				name: 'Paul',
+		 		email: 'paul@example.com'
+	 		}
+		];
+
+		const Zobraz = users.find(o => o.name === "Paul");
+		console.log(Zobraz.email);
+		
+	</script>
+
+</body>
+</html>
